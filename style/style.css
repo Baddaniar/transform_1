@@ -1,4 +1,4 @@
-p{
+/* p{
     margin: 0;
 }
 /* .card{
@@ -18,8 +18,8 @@ p{
     border-radius: 50%;
     transform: rotate(45deg);
 } */
-/* 
-.space{
+
+/* .space{
     width: 100%;
     height: 1000px;
     background-image: url("./../space.jpg");
@@ -30,13 +30,24 @@ p{
 .rocket{
     margin-top: 700px;
     transition: 5s;
+    animation: fly 3s ease 5;
 }
 
-.space:hover .rocket{
+@keyframes fly{
+    from{
+
+    }
+
+    to{
+        transform: rotate(45deg) translatex(1000px) translateY(-1000px);
+    }
+} */
+
+/* .space:hover .rocket{
     transform: rotate(45deg) translatex(1000px) translateY(-1000px);
-}
+} */
 
-.div1{
+/* .div1{
     width: 100px;
     height: 100px;
     border: 1px solid red;
@@ -55,9 +66,9 @@ p{
     margin-left: 50px;
     top: 110vh;
     z-index: 2;
-} */
+} */ 
 
-.container{
+/* .container{
     display: flex;
 }
 
@@ -89,4 +100,44 @@ p{
     height: 100px;
     color: white;
     margin-left: 10px;
+}
+
+.card{
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px grey;
+    animation: opacity 3s ease 5;
+}
+
+@keyframes opacity{
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}  */
+
+.box{
+    width: 1000px;
+    height: 100px;
+    border: 3px solid red;
+}
+
+
+.box2{
+    width: 0%;
+    background-color: red;
+    animation: color 10s linear infinite;
+    height: 100px;
+}
+
+@keyframes color{
+    to{
+        width: 100%;
+    }
 }
